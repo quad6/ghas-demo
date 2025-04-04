@@ -101,20 +101,6 @@ jobs:
         echo '  make release'
         exit 1
 
-    - if: matrix.language == 'java-kotlin'
-      name: Setup Java
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '17'
-        cache: 'maven'
-  
-    - if: matrix.language == 'go'
-      name: Setup Go
-      uses: actions/setup-go@v5
-      with:
-        go-version: '1.17'
-
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
