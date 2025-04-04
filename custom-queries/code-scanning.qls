@@ -6,3 +6,5 @@
   from: codeql-python
 - import: codeql-suites/go-security-and-quality.qls
   from: codeql-go
+- import: codeql-suites/actions-security-and-quality.qls
+  from: codeql-actions
