@@ -17,7 +17,7 @@ pycrypto==2.6.1
 #PyGObject==3.30.4
 PyJWT==2.4.0
 python-dotenv==0.15.0
-pyxdg==0.26
+pyxdg==0.28
 requests==2.32.2
 django==4.2.20
 SecretStorage==2.3.1
