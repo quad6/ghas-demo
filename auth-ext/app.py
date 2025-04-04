@@ -82,8 +82,9 @@ def authenticate(code):
     return {'token': token.decode()}
 
 if __name__ == "__main__":
+    debug_mode = os.environ.get("FLASK_DEBUG", "0") == "1"
     app.run(
         host=os.environ.get("BACKEND_HOST", "127.0.0.1"),
         port=5000,
-        debug=True
+        debug=debug_mode
     )
